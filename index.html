@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital World Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Digital World Clock</h1>
+        <p class="subtitle">Current time across the globe</p>
+        
+        <div class="clocks-grid">
+            <div class="clock-card">
+                <div class="timezone-label">New York</div>
+                <div class="timezone-code">America/New_York</div>
+                <div class="time" id="time-newyork">00:00:00</div>
+                <div class="date" id="date-newyork">Mon, Jan 1</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-label">London</div>
+                <div class="timezone-code">Europe/London</div>
+                <div class="time" id="time-london">00:00:00</div>
+                <div class="date" id="date-london">Mon, Jan 1</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-label">Paris</div>
+                <div class="timezone-code">Europe/Paris</div>
+                <div class="time" id="time-paris">00:00:00</div>
+                <div class="date" id="date-paris">Mon, Jan 1</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-label">Dubai</div>
+                <div class="timezone-code">Asia/Dubai</div>
+                <div class="time" id="time-dubai">00:00:00</div>
+                <div class="date" id="date-dubai">Mon, Jan 1</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-label">Tokyo</div>
+                <div class="timezone-code">Asia/Tokyo</div>
+                <div class="time" id="time-tokyo">00:00:00</div>
+                <div class="date" id="date-tokyo">Mon, Jan 1</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-label">Sydney</div>
+                <div class="timezone-code">Australia/Sydney</div>
+                <div class="time" id="time-sydney">00:00:00</div>
+                <div class="date" id="date-sydney">Mon, Jan 1</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-label">Hong Kong</div>
+                <div class="timezone-code">Asia/Hong_Kong</div>
+                <div class="time" id="time-hongkong">00:00:00</div>
+                <div class="date" id="date-hongkong">Mon, Jan 1</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-label">Singapore</div>
+                <div class="timezone-code">Asia/Singapore</div>
+                <div class="time" id="time-singapore">00:00:00</div>
+                <div class="date" id="date-singapore">Mon, Jan 1</div>
+            </div>
+        </div>
+
+        <div class="add-timezone">
+            <input type="text" id="timezone-input" placeholder="Add timezone (e.g., Asia/Bangkok)">
+            <button onclick="addTimezone()">Add</button>
+        </div>
+
+        <div id="custom-clocks"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
